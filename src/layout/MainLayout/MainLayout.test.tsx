@@ -1,15 +1,15 @@
-import { render, screen } from "@testing-library/react";
-import { MemoryRouter } from "react-router-dom";
-import MainLayout from "./MainLayout";
+import { render, screen } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
+import MainLayout from './MainLayout';
 
-describe("Given a main layout", () => {
-  test("When a page is accessed, then return a title", () => {
+describe('Given a main layout', () => {
+  test('When a page is accessed, then return a title', () => {
     render(
       <MemoryRouter>
         <MainLayout />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
-    const title = screen.getByRole("heading");
+    const title = screen.getByRole('heading');
     expect(title).toBeInTheDocument();
   });
 });
