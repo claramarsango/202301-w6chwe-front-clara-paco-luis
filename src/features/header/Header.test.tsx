@@ -1,12 +1,12 @@
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
-import MainLayout from "./MainLayout";
+import Header from "./Header";
 
-describe("Given a main layout", () => {
-  test("When a page is accessed, then return a title", () => {
+describe("Given a header component", () => {
+  test("When the page is rendered, there should be a title", () => {
     render(
       <MemoryRouter>
-        <MainLayout />
+        <Header />
       </MemoryRouter>
     );
     const title = screen.getByRole("heading");
