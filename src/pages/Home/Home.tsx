@@ -1,7 +1,11 @@
+import RobotCardList from '../../features/cardList/CardList';
+import './Home.css';
+
 const Home = () => {
   return (
     <>
-      <h2>Our list of robots will go below</h2>
+      <h2 className="robots-subtitle">YOUR ROBOTS</h2>
+      <RobotCardList />
     </>
   );
 };
