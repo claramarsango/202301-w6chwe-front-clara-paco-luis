@@ -1,0 +1,22 @@
+.robot__image {
+  max-height: 14rem;
+  max-width: 14rem;
+  border-radius: 2rem;
+}
+
+.robot__description {
+  position: relative;
+}
+
+.description__name {
+  font-size: 2rem;
+}
+
+.description__more-info {
+  position: absolute;
+  bottom: -2rem;
+  right: 0.3rem;
+  border: 0;
+  font-size: 2rem;
+  background-color: rgba(251, 251, 251, 0);
+}
