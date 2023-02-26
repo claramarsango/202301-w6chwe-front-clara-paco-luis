@@ -16,8 +16,8 @@ const RobotCardList = () => {
   return (
     <>
       <ul className="card-list">
-        {robotsList.map((robot: Robot, i) => (
-          <li key={i} className="list__robot">
+        {robotsList.map((robot: Robot) => (
+          <li key={robot.id} className="list__robot">
             <RobotCard robot={robot} />
           </li>
         ))}
