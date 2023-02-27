@@ -2,7 +2,7 @@ import { FC } from 'react';
 import Robot from '../../model/Robot';
 import './Card.css';
 
-interface RobotProps {
+export interface RobotProps {
   robot: Robot;
 }
 
